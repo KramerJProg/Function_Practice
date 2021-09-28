@@ -43,14 +43,14 @@ print(first_plus_length([1, 2, 3, 4, 5]))
 # have the function return False.
 # Example: values_greater_than_second([5,2,3,2,1,4]) should print 3 and return [5,3,4]
 # Example: values_greater_than_second([3]) should return False
-
+# ADJUSTED**
 def values_greater_than_second(list):
     newList = []
     counter = 0
     for i in range(len(list)):
         if len(list) > 2:
-            if i > list[1]:
-                newList.append(i)
+            if list[i] > list[1]:
+                newList.append(list[i])
                 counter += 1
         else:
             return "false"
